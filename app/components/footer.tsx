@@ -3,22 +3,22 @@ import { FaFacebook, FaInstagram } from "react-icons/fa"
 export default function Footer() {
   return (
     <footer className="border-t border-stone-200 py-12">
-      <div className="mx-auto flex flex-row justify-between items-center h-full px-6 max-w-360">
-        <h1 className="font-display font-bold text-xl uppercase text-gray-400">
+      <div className="mx-auto flex h-full max-w-360 flex-row items-center justify-between px-6">
+        <h1 className="font-display text-xl font-bold text-gray-400 uppercase">
           Arch &amp; Design
         </h1>
 
-        <ul className="flex flex-row gap-6 text-gray-500 text-sm font-normal">
-          <li className="hover:cursor-pointer hover:text-primary transition-all">
+        <ul className="flex flex-row gap-6 text-sm font-normal text-gray-500">
+          <li className="hover:text-primary transition-all hover:cursor-pointer">
             About
           </li>
-          <li className="hover:cursor-pointer hover:text-primary transition-all">
+          <li className="hover:text-primary transition-all hover:cursor-pointer">
             Contact
           </li>
-          <li className="hover:cursor-pointer hover:text-primary transition-all">
+          <li className="hover:text-primary transition-all hover:cursor-pointer">
             Privacy
           </li>
-          <li className="hover:cursor-pointer hover:text-primary transition-all">
+          <li className="hover:text-primary transition-all hover:cursor-pointer">
             Terms
           </li>
         </ul>

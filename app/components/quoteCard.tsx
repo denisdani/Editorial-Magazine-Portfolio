@@ -7,14 +7,14 @@ interface QuoteCardProps {
 
 export default function QuoteCard({ text, author }: QuoteCardProps) {
   return (
-    <div className="p-8 bg-primary/5 rounded flex flex-col justify-center items-center text-center space-y-4 border border-primary/10">
+    <div className="bg-primary/5 border-primary/10 flex flex-col items-center justify-center space-y-4 rounded border p-8 text-center">
       <span className="material-symbols-outlined text-primary text-4xl">
         <RiDoubleQuotesR />
       </span>
-      <blockquote className="font-serif text-xl md:text-2xl font-medium text-ink italic leading-relaxed">
+      <blockquote className="text-ink font-serif text-xl leading-relaxed font-medium italic md:text-2xl">
         &quot;{text}&quot;
       </blockquote>
-      <cite className="text-sm font-semibold not-italic text-gray-500">
+      <cite className="text-sm font-semibold text-gray-500 not-italic">
         — {author}
       </cite>
     </div>

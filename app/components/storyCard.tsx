@@ -17,19 +17,19 @@ export default function StoryCard({
 
   return (
     <article className={`group ${rowSpanClass} hover:cursor-pointer`}>
-      <div className={`${aspect} relative rounded overflow-hidden`}>
+      <div className={`${aspect} relative overflow-hidden rounded`}>
         <div
-          className="bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-all duration-700 absolute inset-0"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105"
           style={{ backgroundImage: `url(${bgUrl})` }}
         ></div>
-        <span className="relative top-4 left-4 bg-white/90 uppercase text-xs py-1.5 px-3 rounded-xs tracking-wider font-semibold">
+        <span className="relative top-4 left-4 rounded-xs bg-white/90 px-3 py-1.5 text-xs font-semibold tracking-wider uppercase">
           {category}
         </span>
       </div>
-      <h3 className="group-hover:text-primary font-display font-bold text-2xl md:text-xl mt-4 transition-colors">
+      <h3 className="group-hover:text-primary font-display mt-4 text-2xl font-bold transition-colors md:text-xl">
         {title}
       </h3>
-      <p className="text-sm text-gray-500 mt-2">{subtitle}</p>
+      <p className="mt-2 text-sm text-gray-500">{subtitle}</p>
     </article>
   )
 }

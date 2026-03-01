@@ -8,18 +8,18 @@ import QuoteCard from "./quoteCard"
 export default function LatestStories() {
   return (
     <section>
-      <div className="flex flex-row justify-between items-end mt-8 md:mt-16 border-b border-gray-200 pb-4">
-        <h2 className="font-display font-bold text-4xl">Latest Stories</h2>
+      <div className="mt-8 flex flex-row items-end justify-between border-b border-gray-200 pb-4 md:mt-16">
+        <h2 className="font-display text-4xl font-bold">Latest Stories</h2>
 
         <Link
           href={"#"}
-          className="hidden md:inline-flex flex-row gap-1 items-center text-gray-500 text-sm font-medium hover:text-primary transition-colors"
+          className="hover:text-primary hidden flex-row items-center gap-1 text-sm font-medium text-gray-500 transition-colors md:inline-flex"
         >
           View Archive <FiArrowUpRight size={16} />
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 mb-16">
+      <div className="mt-10 mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <StoryCard
           title="Minimalist Lofts in Berlin's Old East"
           subtitle="Refurbishing industrial heritage into livable, breathing spaces without losing the grit."

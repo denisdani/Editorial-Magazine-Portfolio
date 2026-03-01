@@ -28,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interFont.variable} ${playfairDisplayFont.variable} antialiased bg-background`}
+        className={`${interFont.variable} ${playfairDisplayFont.variable} bg-background antialiased`}
       >
         <Header />
-        <main className="mx-auto px-6 max-w-360">{children}</main>
+        <main className="mx-auto max-w-360 px-6">{children}</main>
         <Footer />
       </body>
     </html>
