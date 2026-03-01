@@ -1,9 +1,9 @@
 interface StoryCardProps {
-  title: string;
-  subtitle: string;
-  category: string;
-  bgUrl: string;
-  aspect?: string;
+  title: string
+  subtitle: string
+  category: string
+  bgUrl: string
+  aspect?: string
 }
 
 export default function StoryCard({
@@ -13,7 +13,7 @@ export default function StoryCard({
   bgUrl,
   aspect = "aspect-16/9",
 }: StoryCardProps) {
-  const rowSpanClass = aspect === "aspect-3/4" ? "row-span-2" : "";
+  const rowSpanClass = aspect === "aspect-3/4" ? "row-span-2" : ""
 
   return (
     <article className={`group ${rowSpanClass} hover:cursor-pointer`}>
@@ -31,5 +31,5 @@ export default function StoryCard({
       </h3>
       <p className="text-sm text-gray-500 mt-2">{subtitle}</p>
     </article>
-  );
+  )
 }

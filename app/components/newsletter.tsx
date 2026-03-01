@@ -26,5 +26,5 @@ export default function Newsletter() {
         </p>
       </div>
     </section>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Link from "next/link"
 
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi"
 
-import StoryCard from "./storyCard";
-import QuoteCard from "./quoteCard";
+import StoryCard from "./storyCard"
+import QuoteCard from "./quoteCard"
 
 export default function LatestStories() {
   return (
@@ -58,5 +58,5 @@ export default function LatestStories() {
         />
       </div>
     </section>
-  );
+  )
 }

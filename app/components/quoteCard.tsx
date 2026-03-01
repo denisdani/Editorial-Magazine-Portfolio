@@ -1,8 +1,8 @@
-import { RiDoubleQuotesR } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri"
 
 interface QuoteCardProps {
-  text: string;
-  author: string;
+  text: string
+  author: string
 }
 
 export default function QuoteCard({ text, author }: QuoteCardProps) {
@@ -18,5 +18,5 @@ export default function QuoteCard({ text, author }: QuoteCardProps) {
         — {author}
       </cite>
     </div>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { MdOutlineSearch } from "react-icons/md";
+import { MdOutlineSearch } from "react-icons/md"
 
 export default function Header() {
   return (
@@ -34,5 +34,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }

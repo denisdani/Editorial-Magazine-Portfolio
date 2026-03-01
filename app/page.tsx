@@ -1,6 +1,6 @@
-import Hero from "./components/hero";
-import LatestStories from "./components/latestStories";
-import Newsletter from "./components/newsletter";
+import Hero from "./components/hero"
+import LatestStories from "./components/latestStories"
+import Newsletter from "./components/newsletter"
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       <LatestStories />
       <Newsletter />
     </div>
-  );
+  )
 }
