@@ -33,7 +33,9 @@ export default function Hero() {
             raw concrete aesthetics to harmonize with the harsh, beautiful
             seaside environment.
           </p>
-          <Editor />
+          <div className="border-t border-gray-200">
+            <Editor />
+          </div>
           <div>
             <button className="text-primary group inline-flex flex-row items-center justify-start gap-3 font-medium hover:cursor-pointer">
               <span className="transition-all group-hover:underline">
