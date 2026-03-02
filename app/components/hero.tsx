@@ -2,6 +2,9 @@ import Link from "next/link"
 
 import { FaArrowRight } from "react-icons/fa"
 
+import Tag from "./tag"
+import Editor from "./editor"
+
 export default function Hero() {
   return (
     <section>
@@ -15,9 +18,7 @@ export default function Hero() {
             }}
           />
           <div className="relative">
-            <span className="bg-primary rounded-xs px-3 py-1.5 text-xs font-semibold tracking-wider text-white uppercase">
-              Feature Story
-            </span>
+            <Tag>Feature Story</Tag>
             <h2 className="font-display mt-6 text-3xl font-bold text-white md:text-5xl xl:text-6xl">
               The Brutalist Revival in Coastal Japan
             </h2>
@@ -32,15 +33,7 @@ export default function Hero() {
             raw concrete aesthetics to harmonize with the harsh, beautiful
             seaside environment.
           </p>
-          <div className="flex flex-row items-center gap-3 border-t border-gray-200 py-4">
-            <span className="inline-flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-sm text-white">
-              TK
-            </span>
-            <div>
-              <p className="text-sm font-medium">Takeshi Kovacs</p>
-              <p className="text-xs text-gray-500">Senior Editor</p>
-            </div>
-          </div>
+          <Editor />
           <div>
             <button className="text-primary group inline-flex flex-row items-center justify-start gap-3 font-medium hover:cursor-pointer">
               <span className="transition-all group-hover:underline">
