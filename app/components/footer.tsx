@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="border-t border-stone-200 py-12">
+    <footer className="py-12">
       <div className="mx-auto flex h-full max-w-360 flex-row items-center justify-between px-6">
         <h1 className="font-display text-xl font-bold text-gray-400 uppercase">
           Arch &amp; Design

@@ -1,6 +1,6 @@
 export default function Newsletter() {
   return (
-    <section className="mb-12 rounded border border-stone-200 bg-white px-8 py-16">
+    <section className="mt-12 border border-stone-200 bg-white px-8 py-16">
       <div className="m-auto flex max-w-2xl flex-col items-center">
         <h3 className="font-display text-3xl font-bold md:text-4xl">
           Design Weekly

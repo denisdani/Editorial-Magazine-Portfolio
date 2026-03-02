@@ -4,6 +4,7 @@ import "./globals.css"
 
 import Header from "./components/header"
 import Footer from "./components/footer"
+import Newsletter from "./components/newsletter"
 
 const interFont = Inter({
   variable: "--font-inter",
@@ -31,7 +32,8 @@ export default function RootLayout({
         className={`${interFont.variable} ${playfairDisplayFont.variable} bg-background antialiased`}
       >
         <Header />
-        {children}
+        <main>{children}</main>
+        <Newsletter />
         <Footer />
       </body>
     </html>
