@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${interFont.variable} ${playfairDisplayFont.variable} bg-background antialiased`}
       >
         <Header />
-        <main className="mx-auto max-w-360 px-6">{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
