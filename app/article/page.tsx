@@ -25,21 +25,21 @@ export default function ArticlePage() {
           <div>
             <Tag>Feature Story</Tag>
           </div>
-          <h1 className="font-display text-center text-8xl font-extrabold">
+          <h1 className="font-display text-center text-5xl leading-[1.1] font-extrabold md:text-7xl lg:text-8xl">
             The Brutalist Revival in Coastal Japan
           </h1>
-          <div className="flex flex-row items-center justify-center gap-6">
+          <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
             <Editor />
-            <GoDotFill size={10} />
+            <GoDotFill size={10} className="hidden md:inline" />
             <p className="text-sm">October 24, 2023</p>
-            <GoDotFill size={10} />
+            <GoDotFill size={10} className="hidden md:inline" />
             <p className="text-sm">12 min read</p>
           </div>
         </div>
       </section>
 
       <div className="relative mx-auto mt-16 grid max-w-360 grid-cols-12 px-6">
-        <aside className="sticky top-20 col-span-3 h-fit py-8 pr-6">
+        <aside className="sticky top-20 col-span-3 hidden h-fit py-8 pr-6 lg:block">
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
             Contents
           </p>
@@ -66,7 +66,7 @@ export default function ArticlePage() {
             </ShareButton>
           </div>
         </aside>
-        <article className="relative col-span-8 pr-24">
+        <article className="relative col-span-12 lg:col-span-8 lg:pr-24">
           <p className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium">
             The salt air of Kanagawa has always been an enemy to the built
             environment. Wood rots, steel rusts, and paint peels in the
@@ -89,7 +89,7 @@ export default function ArticlePage() {
             acting as canvases for the ever-changing light of the sea.
           </p>
 
-          <div className="-mx-16 my-12">
+          <div className="-mx-6 my-12 lg:-mx-16">
             <figure>
               <div className="relative aspect-video overflow-hidden rounded">
                 <Image
@@ -134,7 +134,7 @@ export default function ArticlePage() {
             </p>
           </div>
 
-          <div className="my-12 grid grid-cols-2 gap-6">
+          <div className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             <figure className="space-y-3">
               <div className="relative aspect-3/4 overflow-hidden rounded">
                 <Image
