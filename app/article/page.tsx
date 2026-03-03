@@ -98,7 +98,7 @@ export default function ArticlePage() {
           </div>
         </aside>
         <article className="relative col-span-12 lg:col-span-8 lg:pr-24">
-          <section id="intro">
+          <section id="intro" className="scroll-mt-25">
             <p className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium">
               The salt air of Kanagawa has always been an enemy to the built
               environment. Wood rots, steel rusts, and paint peels in the
@@ -139,7 +139,7 @@ export default function ArticlePage() {
               </figure>
             </div>
           </section>
-          <section id="materiality">
+          <section id="materiality" className="scroll-mt-25">
             <div className="mt-12 mb-16">
               <h2 className="font-display mb-6 text-3xl font-bold">
                 Materiality
@@ -198,7 +198,7 @@ export default function ArticlePage() {
               </figure>
             </div>
           </section>
-          <section id="human-element" className="mb-16">
+          <section id="human-element" className="mb-16 scroll-mt-25">
             <h2 className="font-display mb-6 text-3xl font-bold">
               The Human Element
             </h2>
@@ -223,7 +223,7 @@ export default function ArticlePage() {
             </p>
           </section>
 
-          <section id="legacy" className="mb-12">
+          <section id="legacy" className="mb-12 scroll-mt-25">
             <h2 className="mb-6 font-serif text-3xl font-bold">Legacy</h2>
             <p className="mb-6 text-lg leading-relaxed">
               As we depart Kanagawa, the sun begins to set, casting long shadows
