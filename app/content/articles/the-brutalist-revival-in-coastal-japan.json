@@ -1,0 +1,112 @@
+{
+  "id": "post_01J7K9B2",
+  "slug": "the-brutalist-revival-in-coastal-japan",
+  "title": "The Brutalist Revival in Coastal Japan",
+  "category": "FEATURE STORY",
+  "author": {
+    "name": "Takeshi Kovacs",
+    "role": "Senior Editor",
+    "avatarUrl": "/images/authors/takeshi.jpg"
+  },
+  "publishedAt": "2024-08-24T08:00:00Z",
+  "readingTime": "12 Min Read",
+  "excerpt": "Exploring how a new wave of architects in Kanagawa are reimagining raw concrete aesthetics to harmonize with the harsh, beautiful seaside environment.",
+  "coverImage": {
+    "url": "/images/articles/brutalist-hero.jpg",
+    "alt": "A modern brutalist concrete building with large windows"
+  },
+  "tags": ["ARCHITECTURE", "JAPAN", "BRUTALISM", "COASTAL LIVING"],
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "dropCap": true,
+      "text": "The salt air of Kanagawa has always been an enemy to the built environment. Wood rots, steel rusts, and paint peels in the relentless humidity of the Japanese summer. Yet, in this harsh coastal crucible, a new generation of architects is rediscovering the stoic beauty of raw concrete."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is not the brutalism of 1960s government housing or the imposing citadels of the post-war era. This is something softer, more attuned to the rhythms of nature—a “New Japandi Brutalism” that seeks not to dominate the landscape, but to endure within it."
+    },
+    {
+      "type": "paragraph",
+      "text": "We traveled along the Shonan coastline to document three private residences that embody this shift. These structures stand as monoliths against the crashing Pacific waves, their gray facades acting as canvases for the ever-changing light of the sea."
+    },
+    {
+      "type": "image",
+      "url": "/images/articles/brutalist-interior-1.jpg",
+      "alt": "Minimalist interior with large window facing the sea",
+      "caption": "Figure 1: The 'Kamakura Monolith' interior, utilizing light wells to soften the concrete walls."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "materiality",
+      "text": "Materiality"
+    },
+    {
+      "type": "paragraph",
+      "text": "The choice of concrete is pragmatic, but the execution is poetic. Architect Yumi Tanaka, whose 'House of Silence' in Hayama has garnered international acclaim, explains that the texture is paramount. \"We use cedar formwork,\" she tells us, running a hand along a wall that bears the grain of timber long since removed. \"The concrete remembers the wood. It holds the memory of the forest even as it resists the ocean.\""
+    },
+    {
+      "type": "blockquote",
+      "text": "The concrete remembers the wood. It holds the memory of the forest even as it resists the ocean.",
+      "author": "Yumi Tanaka"
+    },
+    {
+      "type": "paragraph",
+      "text": "This textural interplay softens the acoustic harshness typically associated with minimalist spaces. The rough surfaces diffuse sound, creating an interior atmosphere that feels hushed and sacred; a stark contrast to the roar of the surf just meters away."
+    },
+    {
+      "type": "image_grid",
+      "layout": "two-columns",
+      "images": [
+        {
+          "url": "/images/articles/brutalist-detail-wood-stairs.jpg",
+          "alt": "Curved wooden staircase detail",
+          "caption": "Detail: Wooden stairs & joinery"
+        },
+        {
+          "url": "/images/articles/brutalist-detail-facade.jpg",
+          "alt": "Exterior concrete facade with blue sky",
+          "caption": "Detail: Wood-formed concrete"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "human-element",
+      "text": "The Human Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Critics of brutalism often cite its coldness, its lack of domesticity. However, these coastal homes are filled with warmth. The secret lies in the curation of furnishings and the manipulation of natural light."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the 'Enoshima Retreat', vintage Scandinavian teak furniture provides a necessary counterpoint to the gray shell. Rugs woven from natural fibers define living zones without the need for walls. The result is an open plan that feels intimate, a cave that looks out onto the world."
+    },
+    {
+      "type": "paragraph",
+      "text": "The windows are not merely holes in the wall; they are carefully calibrated lenses. Some frame the horizon, others the sky, and some, placed low near the floor, capture the garden's moss, grounding the residents in the earth."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "legacy",
+      "text": "Legacy"
+    },
+    {
+      "type": "paragraph",
+      "text": "As we depart Kanagawa, the sun begins to set, casting long shadows across the textured facades. These buildings will age. Moss will grow in the crevices of the concrete. The salt will eventually leave its mark. But that is the point. They are built to age gracefully, to become part of the coastline rather than an imposition upon it."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a world obsessed with the new and the shiny, the brutalist revival in coastal Japan offers a different lesson: there is a profound elegance in durability, and a quiet beauty in strength."
+    }
+  ],
+  "relatedArticles": [
+    "nordic-cabin-retreats",
+    "the-future-of-urban-parks",
+    "color-theory-in-2024"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "post_01J7K9B6",
+  "slug": "sustainable-woodworking",
+  "title": "Sustainable Woodworking",
+  "category": "DESIGN",
+  "author": {
+    "name": "Hiroshi Yamauchi",
+    "role": "Design Contributor",
+    "avatarUrl": "/images/authors/hiroshi.jpg"
+  },
+  "publishedAt": "2024-09-28T11:00:00Z",
+  "readingTime": "8 min read",
+  "excerpt": "The artisans preserving ancient Japanese joinery techniques for modern furniture design.",
+  "coverImage": {
+    "url": "/images/articles/sustainable-wood-hero.jpg",
+    "alt": "A beautifully crafted wooden spiral staircase"
+  },
+  "tags": ["DESIGN", "WOODWORKING", "CRAFTSMANSHIP", "JAPAN"],
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "dropCap": true,
+      "text": "Long before the invention of metal screws, nails, or industrial adhesives, Japanese carpenters were erecting temples that would withstand earthquakes, typhoons, and the weight of centuries. Their secret was Kigumi: an intricate, mathematically precise system of interlocking wooden joints. Today, as the design world scrambles to find truly sustainable manufacturing methods, this ancient art form is experiencing a profound renaissance."
+    },
+    {
+      "type": "paragraph",
+      "text": "Modern furniture design has long been plagued by the 'fast fashion' mentality: cheap materials, toxic glues, and hardware that strips and fails over time, rendering pieces unrepairable. Kigumi offers an antidote. By relying entirely on friction, geometry, and the natural expansion and contraction of the wood itself, these joints create bonds that are often stronger than the timber they connect."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "kigumi-art-of-joints",
+      "text": "Kigumi: The Art of Wood Joints"
+    },
+    {
+      "type": "paragraph",
+      "text": "The mastery of Kigumi requires a deep, almost spiritual understanding of the material. Artisans must 'read' the grain of the wood, anticipating how it will warp or shrink depending on the humidity. There are hundreds of documented joint types, from the relatively simple 'Kanawa Tsugi' (a spliced joint for lengthening beams) to the maddeningly complex 'Kawai Tsugite', a three-way interlocking puzzle that can be assembled from multiple directions."
+    },
+    {
+      "type": "image",
+      "url": "/images/articles/kigumi-joint-detail.jpg",
+      "alt": "Close up of a complex interlocking wooden joint without nails",
+      "caption": "A complex 'Kawai Tsugite' joint, demonstrating the precision required without the use of hardware."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "modern-applications",
+      "text": "Modern Applications"
+    },
+    {
+      "type": "paragraph",
+      "text": "Contemporary designers are adapting these techniques to create flat-pack furniture that requires no tools to assemble, effectively eliminating the need for metal hardware and reducing the carbon footprint of shipping. Furthermore, because no glues are used, the furniture is 100% biodegradable at the end of its exceptionally long life."
+    },
+    {
+      "type": "blockquote",
+      "text": "True sustainability isn't just about using recycled materials; it's about creating objects so durable and deeply valued that they never reach the landfill.",
+      "author": "Kenjiro Sato, Master Carpenter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The integration of CNC (Computer Numerical Control) milling has lowered the barrier to entry, allowing the extreme precision required for Kigumi to be scaled for production. However, the final fitting and finishing still require the human hand, ensuring that this ancient craft remains fundamentally connected to the artisan."
+    }
+  ],
+  "relatedArticles": [
+    "nordic-cabin-retreats",
+    "minimalist-lofts-in-berlins-old-east"
+  ]
+}

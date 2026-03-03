@@ -1,0 +1,71 @@
+{
+  "id": "post_01J7K9C0",
+  "slug": "master-of-light",
+  "title": "Master of Light",
+  "category": "PROFILE",
+  "author": {
+    "name": "Sarah Jenkins",
+    "role": "Cultural Critic",
+    "avatarUrl": "/images/authors/sarah.jpg"
+  },
+  "publishedAt": "2024-10-05T14:00:00Z",
+  "readingTime": "10 MIN READ",
+  "excerpt": "An exclusive interview with Pritzker Prize winner regarding his latest museum project.",
+  "coverImage": {
+    "url": "/images/articles/master-of-light-hero.jpg",
+    "alt": "Abstract silhouette of an architect against a glowing orange and yellow background"
+  },
+  "tags": ["PROFILE", "INTERVIEW", "MUSEUM ARCHITECTURE", "LIGHTING"],
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "dropCap": true,
+      "text": "To speak with Tadao Ando is to speak with a man who views concrete not as a heavy, immovable mass, but as a blank canvas waiting to be painted by the sun. Fresh off his Pritzker Prize win, the notoriously reclusive architect sat down with us in his Osaka studio to discuss his latest magnum opus: a subterranean contemporary art museum carved directly into a limestone cliff face."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "designing-with-shadows",
+      "text": "Designing with Shadows"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike most museum designs that prioritize massive skylights and uniform artificial flooding, this new project is defined by its shadows. 'In modern architecture, we have developed a phobia of the dark,' he explains, sketching a rapid, fluid line across a piece of tracing paper. 'But without the dark, light has no impact. It loses its spirituality. I do not design the windows; I design the darkness, and then I decide where to crack it open.'"
+    },
+    {
+      "type": "image",
+      "url": "/images/articles/light-museum-corridor.jpg",
+      "alt": "A dark, dramatic concrete corridor illuminated only by a single sliver of sunlight",
+      "caption": "A singular, precisely angled slit in the ceiling tracks the sun's movement throughout the day."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "the-geometry-of-nature",
+      "text": "The Geometry of Nature"
+    },
+    {
+      "type": "paragraph",
+      "text": "The museum's layout is deceptively simple: a series of nested geometric shapes—circles, squares, and triangles—that dictate the flow of the visitor. However, the exact placement of these shapes was determined entirely by the natural topography of the cliff and the trajectory of the winter solstice. The building is, essentially, a massive solar calendar."
+    },
+    {
+      "type": "blockquote",
+      "text": "I want visitors to lose their sense of time within the art, but to be constantly reminded of the turning of the earth by the moving blade of light on the wall.",
+      "author": "The Architect"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "the-experience-of-approach",
+      "text": "The Experience of Approach"
+    },
+    {
+      "type": "paragraph",
+      "text": "Perhaps the most striking element is the entrance. Visitors do not walk through grand double doors. Instead, they must traverse a narrow, descending ramp flanked by high concrete walls, effectively leaving the noise of the outside world behind. By the time they step into the first subterranean gallery, their eyes have adjusted to the gloom, and the single ray of light illuminating the central sculpture hits them with the force of a physical revelation."
+    }
+  ],
+  "relatedArticles": [
+    "the-brutalist-revival-in-coastal-japan",
+    "the-spiral-staircase-as-sculpture"
+  ]
+}

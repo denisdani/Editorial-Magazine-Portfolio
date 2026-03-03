@@ -1,0 +1,71 @@
+{
+  "id": "post_01J7K9B9",
+  "slug": "alpine-minimalism",
+  "title": "Alpine Minimalism",
+  "category": "RESIDENTIAL",
+  "author": {
+    "name": "Takeshi Kovacs",
+    "role": "Senior Editor",
+    "avatarUrl": "/images/authors/takeshi.jpg"
+  },
+  "publishedAt": "2024-10-25T08:00:00Z",
+  "readingTime": "6 MIN READ",
+  "excerpt": "A study in restraint: How Swiss architects are redefining the mountain chalet.",
+  "coverImage": {
+    "url": "/images/articles/alpine-minimalism-hero.jpg",
+    "alt": "A sleek, black minimalist cabin set against a snowy mountain backdrop"
+  },
+  "tags": ["RESIDENTIAL", "SWITZERLAND", "MINIMALISM", "TIMBER"],
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "dropCap": true,
+      "text": "The traditional Alpine chalet—with its oversized eaves, decorative woodwork, and heavy stone base—is an iconic symbol of mountain living. Yet, for a new generation of Swiss architects, this traditional aesthetic has become a restrictive cliché. In the high-altitude valleys of the Engadine and the Valais, a quiet revolution is taking place, stripping the chalet down to its most elemental, geometric essence."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "stripping-the-vernacular",
+      "text": "Stripping the Vernacular"
+    },
+    {
+      "type": "paragraph",
+      "text": "The guiding principle of Alpine Minimalism is absolute subtraction. Designers are removing the overhanging roofs, the carved balconies, and the picturesque shutters. What remains is a sheer, monolithic volume. By utilizing flush-mounted windows and concealing gutters within the structure's envelope, these new dwellings appear as single, sharply cut blocks resting silently in the snow."
+    },
+    {
+      "type": "image",
+      "url": "/images/articles/alpine-interior.jpg",
+      "alt": "A spartan interior with pale spruce wood covering the floor, walls, and ceiling",
+      "caption": "The interior of the Vals Residence, wrapped entirely in locally sourced, untreated spruce."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "monomateriality",
+      "text": "The Power of Monomateriality"
+    },
+    {
+      "type": "paragraph",
+      "text": "To achieve this level of visual purity, architects are heavily relying on monomateriality. Rather than mixing stone, plaster, and various woods, a single material is chosen to wrap the entire structure—both inside and out. Often, this is locally harvested larch or spruce, left completely untreated. Over time, the exterior timber oxidizes to a silvery-gray, allowing the crisp geometric shape to naturally camouflage into the rocky, snow-dusted landscape."
+    },
+    {
+      "type": "blockquote",
+      "text": "The mountain is already dramatic enough. The architecture does not need to shout; it simply needs to provide a quiet place to observe.",
+      "author": "Lukas Meier, Architect"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "ecological-footprint",
+      "text": "Minimizing the Footprint"
+    },
+    {
+      "type": "paragraph",
+      "text": "Beyond aesthetics, this minimalism is deeply tied to ecological responsibility. These highly insulated, compact volumes are incredibly efficient to heat. By pre-fabricating the timber panels off-site, construction time in the delicate alpine tundra is reduced from months to mere weeks, minimizing the disturbance to the local flora and fauna. It is a philosophy of treading lightly, both visually and environmentally."
+    }
+  ],
+  "relatedArticles": [
+    "nordic-cabin-retreats",
+    "industrial-soul"
+  ]
+}

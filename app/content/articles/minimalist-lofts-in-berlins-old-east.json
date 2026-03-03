@@ -1,0 +1,46 @@
+{
+  "id": "post_01J7K9B3",
+  "slug": "minimalist-lofts-in-berlins-old-east",
+  "title": "Minimalist Lofts in Berlin's Old East",
+  "category": "INTERIORS",
+  "author": {
+    "name": "Elena Fisher",
+    "role": "Staff Writer",
+    "avatarUrl": "/images/authors/elena.jpg"
+  },
+  "publishedAt": "2024-10-12T10:30:00Z",
+  "readingTime": "6 min read",
+  "excerpt": "Refurbishing industrial heritage into livable, breathing spaces without losing the grit.",
+  "coverImage": {
+    "url": "/images/articles/berlin-loft.jpg",
+    "alt": "A minimalist loft interior with large industrial windows overlooking a city"
+  },
+  "tags": ["INTERIORS", "BERLIN", "ADAPTIVE REUSE", "MINIMALISM"],
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "dropCap": true,
+      "text": "The industrial fabric of East Berlin has undergone countless transformations since the fall of the wall. What were once bustling manufacturing plants and warehouses became illegal techno clubs in the 90s, and later, coveted real estate for tech startups. Today, a new movement is reclaiming these spaces for residential living, prioritizing the preservation of their gritty, historical essence."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "industrial-heritage",
+      "text": "Honoring the Industrial Heritage"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rather than plastering over the scars of the past, architects are leaving exposed brickwork, original steel beams, and even factory markings completely intact. The design philosophy is one of addition rather than subtraction: inserting modern comforts—like underfloor heating and high-spec kitchens—as floating elements that never quite touch the historical shell."
+    },
+    {
+      "type": "image",
+      "url": "/images/articles/berlin-loft-kitchen.jpg",
+      "alt": "Sleek modern kitchen island inside an old brick factory space",
+      "caption": "Matte black kitchen modules acting as standalone furniture within the vast industrial hall."
+    }
+  ],
+  "relatedArticles": [
+    "industrial-soul",
+    "the-brutalist-revival-in-coastal-japan"
+  ]
+}
