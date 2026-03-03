@@ -98,103 +98,107 @@ export default function ArticlePage() {
           </div>
         </aside>
         <article className="relative col-span-12 lg:col-span-8 lg:pr-24">
-          <p className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium">
-            The salt air of Kanagawa has always been an enemy to the built
-            environment. Wood rots, steel rusts, and paint peels in the
-            relentless humidity of the Japanese summer. Yet, in this harsh
-            coastal crucible, a new generation of architects is rediscovering
-            the stoic beauty of raw concrete.
-          </p>
+          <section id="intro">
+            <p className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium">
+              The salt air of Kanagawa has always been an enemy to the built
+              environment. Wood rots, steel rusts, and paint peels in the
+              relentless humidity of the Japanese summer. Yet, in this harsh
+              coastal crucible, a new generation of architects is rediscovering
+              the stoic beauty of raw concrete.
+            </p>
 
-          <p className="mb-6 text-lg leading-relaxed">
-            This is not the brutalism of 1960s government housing or the
-            imposing citadels of the post-war era. This is something softer,
-            more attuned to the rhythms of nature—a &quot;Neo-Japandi
-            Brutalism&quot; that seeks not to dominate the landscape, but to
-            endure within it.
-          </p>
-          <p className="mb-6 text-lg leading-relaxed">
-            We traveled along the Shonan coastline to document three private
-            residences that embody this shift. These structures stand as
-            monoliths against the crashing Pacific waves, their grey facades
-            acting as canvases for the ever-changing light of the sea.
-          </p>
+            <p className="mb-6 text-lg leading-relaxed">
+              This is not the brutalism of 1960s government housing or the
+              imposing citadels of the post-war era. This is something softer,
+              more attuned to the rhythms of nature—a &quot;Neo-Japandi
+              Brutalism&quot; that seeks not to dominate the landscape, but to
+              endure within it.
+            </p>
+            <p className="mb-6 text-lg leading-relaxed">
+              We traveled along the Shonan coastline to document three private
+              residences that embody this shift. These structures stand as
+              monoliths against the crashing Pacific waves, their grey facades
+              acting as canvases for the ever-changing light of the sea.
+            </p>
 
-          <div className="-mx-6 my-12 lg:-mx-16">
-            <figure>
-              <div className="relative aspect-video overflow-hidden rounded">
-                <Image
-                  alt="The 'Kamakura Monolith' interior, utilizing
+            <div className="-mx-6 my-12 lg:-mx-16">
+              <figure>
+                <div className="relative aspect-video overflow-hidden rounded">
+                  <Image
+                    alt="The 'Kamakura Monolith' interior, utilizing
                 light wells to soften the concrete walls."
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4EEzm_b0XENMkKF0sxtRLua3iePAs9igkWFG-MAxRDER7kMehySvRKayVWREySgfHWqkIMnGzLvjqJJTO02kgaupPwnHxGLbP7OmOHgku97f1w5mI1zrR6OA2ptxTWrJ5f2hZ9cJ9DjyQdyZCmrjg1iRMSkVm_iJ0yYuxZDZraS-Odo1BLhpuQth_Q3XGdD1FS79xMjQaYyyt7ypbqBgNnRtd4surDc2ZQTQQKt8Ajj-TS6SQ6G3SjqGO_HpwhFbwIad-NRyuytf-"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <figcaption className="mt-4 px-6 text-center text-sm font-medium text-gray-400">
-                Figure 1: The &apos;Kamakura Monolith&apos; interior, utilizing
-                light wells to soften the concrete walls.
-              </figcaption>
-            </figure>
-          </div>
-
-          <div className="mt-12 mb-16">
-            <h2 className="font-display mb-6 text-3xl font-bold">
-              Materiality
-            </h2>
-            <p className="mb-6 text-lg leading-relaxed">
-              The choice of concrete is pragmatic, but the execution is poetic.
-              Architect Yumi Tanaka, whose &apos;House of Silence&apos; in
-              Hayama has garnered international acclaim, explains that the
-              texture is paramount. &quot;We use cedar formwork,&quot; she tells
-              us, running a hand along a wall that bears the grain of timber
-              long since removed. &quot;The concrete remembers the wood. It
-              holds the memory of the forest even as it resists the ocean.&quot;
-            </p>
-            <div className="border-primary my-12 border-l-4 py-2 pl-8">
-              <blockquote className="font-display text-3xl leading-snug text-gray-400 italic">
-                &quot;The concrete remembers the wood. It holds the memory of
-                the forest even as it resists the ocean.&quot;
-              </blockquote>
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4EEzm_b0XENMkKF0sxtRLua3iePAs9igkWFG-MAxRDER7kMehySvRKayVWREySgfHWqkIMnGzLvjqJJTO02kgaupPwnHxGLbP7OmOHgku97f1w5mI1zrR6OA2ptxTWrJ5f2hZ9cJ9DjyQdyZCmrjg1iRMSkVm_iJ0yYuxZDZraS-Odo1BLhpuQth_Q3XGdD1FS79xMjQaYyyt7ypbqBgNnRtd4surDc2ZQTQQKt8Ajj-TS6SQ6G3SjqGO_HpwhFbwIad-NRyuytf-"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="mt-4 px-6 text-center text-sm font-medium text-gray-400">
+                  Figure 1: The &apos;Kamakura Monolith&apos; interior,
+                  utilizing light wells to soften the concrete walls.
+                </figcaption>
+              </figure>
             </div>
-            <p className="mb-6 text-lg leading-relaxed">
-              This textural interplay softens the acoustic harshness typically
-              associated with minimalist spaces. The rough surfaces diffuse
-              sound, creating an interior atmosphere that feels hushed and
-              sacred, a stark contrast to the roar of the surf just meters away.
-            </p>
-          </div>
-
-          <div className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <figure className="space-y-3">
-              <div className="relative aspect-3/4 overflow-hidden rounded">
-                <Image
-                  fill
-                  alt="Detail of wooden staircase against concrete"
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMJwEeGGT12KJJFzMggvD5q0Y7d91qFqoFULZQtSXKFdKHtTRgsuc_uTiI1Ugd6g19pMVB_aA2bC_vy4hXUKEqNdEeV2MxJMk3gMFCFkRZB6o1m6AFsYC0BIwDhMBWv_IN23s68FSN-BEj5GfAIULmK6XhPpzKRLSBdtTaN2MqAQtl7uSYhz8y5KlI09JuwrPOd26HuEICGCsiIF-BKFpmtRrE13TW1qnnkxEOAf3B16p3tvYnXY_v_328jauI-h8WZ1sNtpiy1STq"
-                />
+          </section>
+          <section id="materiality">
+            <div className="mt-12 mb-16">
+              <h2 className="font-display mb-6 text-3xl font-bold">
+                Materiality
+              </h2>
+              <p className="mb-6 text-lg leading-relaxed">
+                The choice of concrete is pragmatic, but the execution is
+                poetic. Architect Yumi Tanaka, whose &apos;House of
+                Silence&apos; in Hayama has garnered international acclaim,
+                explains that the texture is paramount. &quot;We use cedar
+                formwork,&quot; she tells us, running a hand along a wall that
+                bears the grain of timber long since removed. &quot;The concrete
+                remembers the wood. It holds the memory of the forest even as it
+                resists the ocean.&quot;
+              </p>
+              <div className="border-primary my-12 border-l-4 py-2 pl-8">
+                <blockquote className="font-display text-3xl leading-snug text-gray-400 italic">
+                  &quot;The concrete remembers the wood. It holds the memory of
+                  the forest even as it resists the ocean.&quot;
+                </blockquote>
               </div>
-              <figcaption className="text-xs tracking-wide text-gray-500 uppercase">
-                Detail: Joinery meets Cement
-              </figcaption>
-            </figure>
-            <figure className="space-y-3 md:mt-12">
-              <div className="relative aspect-3/4 overflow-hidden rounded">
-                <Image
-                  fill
-                  alt="Exterior facade showing weathering"
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6lJXxhfef7FbLeOMdbukMRNp2ziEUHHcH7qt4uic5l97OlNRBnTliDXTS-e--cub4umrfeRmp8w1t1Tjli2_GpMkRoDsUucRv-RLHjZJw2zNkVutnIuNSs12dFnmI6Uudi6GOqFspEaecbgnHCyOrMx7aNBWkfzPX4fXmQXaHg0ucZND68DqT2nrmo949F-UPA82jSffBKuBJ_CrWsFW02lj1ANZbVsAgjAOuNADqq_DwWqlWwqvxCV1-RkBnpNlFdSxN2pXoA3OQ"
-                />
-              </div>
-              <figcaption className="text-xs tracking-wide text-gray-500 uppercase">
-                Detail: Weathered Patina
-              </figcaption>
-            </figure>
-          </div>
+              <p className="mb-6 text-lg leading-relaxed">
+                This textural interplay softens the acoustic harshness typically
+                associated with minimalist spaces. The rough surfaces diffuse
+                sound, creating an interior atmosphere that feels hushed and
+                sacred, a stark contrast to the roar of the surf just meters
+                away.
+              </p>
+            </div>
 
-          <div className="mb-16">
+            <div className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+              <figure className="space-y-3">
+                <div className="relative aspect-3/4 overflow-hidden rounded">
+                  <Image
+                    fill
+                    alt="Detail of wooden staircase against concrete"
+                    className="object-cover transition-transform duration-700 hover:scale-105"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMJwEeGGT12KJJFzMggvD5q0Y7d91qFqoFULZQtSXKFdKHtTRgsuc_uTiI1Ugd6g19pMVB_aA2bC_vy4hXUKEqNdEeV2MxJMk3gMFCFkRZB6o1m6AFsYC0BIwDhMBWv_IN23s68FSN-BEj5GfAIULmK6XhPpzKRLSBdtTaN2MqAQtl7uSYhz8y5KlI09JuwrPOd26HuEICGCsiIF-BKFpmtRrE13TW1qnnkxEOAf3B16p3tvYnXY_v_328jauI-h8WZ1sNtpiy1STq"
+                  />
+                </div>
+                <figcaption className="text-xs tracking-wide text-gray-500 uppercase">
+                  Detail: Joinery meets Cement
+                </figcaption>
+              </figure>
+              <figure className="space-y-3 md:mt-12">
+                <div className="relative aspect-3/4 overflow-hidden rounded">
+                  <Image
+                    fill
+                    alt="Exterior facade showing weathering"
+                    className="object-cover transition-transform duration-700 hover:scale-105"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6lJXxhfef7FbLeOMdbukMRNp2ziEUHHcH7qt4uic5l97OlNRBnTliDXTS-e--cub4umrfeRmp8w1t1Tjli2_GpMkRoDsUucRv-RLHjZJw2zNkVutnIuNSs12dFnmI6Uudi6GOqFspEaecbgnHCyOrMx7aNBWkfzPX4fXmQXaHg0ucZND68DqT2nrmo949F-UPA82jSffBKuBJ_CrWsFW02lj1ANZbVsAgjAOuNADqq_DwWqlWwqvxCV1-RkBnpNlFdSxN2pXoA3OQ"
+                  />
+                </div>
+                <figcaption className="text-xs tracking-wide text-gray-500 uppercase">
+                  Detail: Weathered Patina
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section id="human-element" className="mb-16">
             <h2 className="font-display mb-6 text-3xl font-bold">
               The Human Element
             </h2>
@@ -217,9 +221,9 @@ export default function ArticlePage() {
               some, placed low near the floor, capture the garden&apos;s moss,
               grounding the residents in the earth.
             </p>
-          </div>
+          </section>
 
-          <div className="mb-12">
+          <section id="legacy" className="mb-12">
             <h2 className="mb-6 font-serif text-3xl font-bold">Legacy</h2>
             <p className="mb-6 text-lg leading-relaxed">
               As we depart Kanagawa, the sun begins to set, casting long shadows
@@ -234,7 +238,7 @@ export default function ArticlePage() {
               revival in coastal Japan offers a different lesson: there is a
               profound elegance in durability, and a quiet beauty in strength.
             </p>
-          </div>
+          </section>
         </article>
       </div>
     </div>
