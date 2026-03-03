@@ -44,12 +44,43 @@ export default function ArticlePage() {
             Contents
           </p>
           <nav className="mt-2 mr-16 mb-8 border-y border-gray-200 py-8">
-            <ul>
-              <li>test 1</li>
-              <li>test 2</li>
-              <li>test 3</li>
-              <li>test 4</li>
-            </ul>
+            <div className="relative border-l border-gray-200 pl-4">
+              <div className="bg-primary absolute top-0 -left-px h-8 w-0.5 transition-all duration-300 ease-out"></div>
+              <ul className="space-y-6 text-sm font-medium text-gray-400/80">
+                <li>
+                  <a
+                    className="hover:text-primary block font-bold text-gray-400 transition-colors"
+                    href="#intro"
+                  >
+                    Intro
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:text-primary block transition-colors"
+                    href="#materiality"
+                  >
+                    Materiality
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:text-primary block transition-colors"
+                    href="#human-element"
+                  >
+                    The Human Element
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:text-primary block transition-colors"
+                    href="#legacy"
+                  >
+                    Legacy
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
             Share
@@ -121,7 +152,7 @@ export default function ArticlePage() {
               holds the memory of the forest even as it resists the ocean.&quot;
             </p>
             <div className="border-primary my-12 border-l-4 py-2 pl-8">
-              <blockquote className="text-ink font-display text-3xl leading-snug italic">
+              <blockquote className="font-display text-3xl leading-snug text-gray-400 italic">
                 &quot;The concrete remembers the wood. It holds the memory of
                 the forest even as it resists the ocean.&quot;
               </blockquote>
