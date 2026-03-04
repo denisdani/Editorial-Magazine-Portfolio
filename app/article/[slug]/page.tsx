@@ -81,10 +81,7 @@ export default async function ArticlePage({
             </ShareButton>
           </div>
         </aside>
-        <article
-          className="relative col-span-12 scroll-mt-25 lg:col-span-8 lg:pr-24"
-          id="intro"
-        >
+        <article className="relative col-span-12 lg:col-span-8 lg:pr-24">
           {contentBlocks.map((block, i) => {
             switch (block.type) {
               case "paragraph":
@@ -92,7 +89,8 @@ export default async function ArticlePage({
                   return (
                     <p
                       key={i}
-                      className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium"
+                      id="intro"
+                      className="drop-cap font-display mb-10 scroll-mt-25 text-2xl leading-relaxed font-medium"
                     >
                       {block.text}
                     </p>
