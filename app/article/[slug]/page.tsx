@@ -1,3 +1,4 @@
+import { JSX } from "react"
 import Image from "next/image"
 import { notFound } from "next/navigation"
 
@@ -80,7 +81,10 @@ export default async function ArticlePage({
             </ShareButton>
           </div>
         </aside>
-        <article className="relative col-span-12 lg:col-span-8 lg:pr-24">
+        <article
+          className="relative col-span-12 scroll-mt-25 lg:col-span-8 lg:pr-24"
+          id="intro"
+        >
           {contentBlocks.map((block) => {
             switch (block.type) {
               case "paragraph":
@@ -115,45 +119,19 @@ export default async function ArticlePage({
                   </div>
                 )
 
-              case "heading":
-                switch (block.level) {
-                  case 1:
-                    return (
-                      <h1 className="font-display mb-6 text-3xl font-bold">
-                        {block.text}
-                      </h1>
-                    )
-                  case 3:
-                    return (
-                      <h3 className="font-display mb-6 text-3xl font-bold">
-                        {block.text}
-                      </h3>
-                    )
-                  case 4:
-                    return (
-                      <h4 className="font-display mb-6 text-3xl font-bold">
-                        {block.text}
-                      </h4>
-                    )
-                  case 5:
-                    return (
-                      <h5 className="font-display mb-6 text-3xl font-bold">
-                        {block.text}
-                      </h5>
-                    )
-                  case 6:
-                    return (
-                      <h6 className="font-display mb-6 text-3xl font-bold">
-                        {block.text}
-                      </h6>
-                    )
-                }
+              case "heading": {
+                const Tag =
+                  `h${block.level || 2}` as keyof JSX.IntrinsicElements
 
                 return (
-                  <h2 className="font-display mb-6 text-3xl font-bold">
+                  <Tag
+                    id={block.id}
+                    className="font-display mb-6 scroll-mt-25 text-3xl font-bold"
+                  >
                     {block.text}
-                  </h2>
+                  </Tag>
                 )
+              }
 
               case "blockquote":
                 return (
