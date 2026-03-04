@@ -1,12 +1,13 @@
 import Image from "next/image"
+import { getArticleBySlug } from "@/lib/articles"
 
 import { GoDotFill } from "react-icons/go"
 import { FaFacebook, FaLink, FaTwitter } from "react-icons/fa"
 
-import Author from "../components/author"
-import Tag from "../components/tag"
-import ShareButton from "../components/shareButton"
-import { TableOfContents } from "../components/tableOfContents"
+import Author from "../../components/author"
+import Tag from "../../components/tag"
+import ShareButton from "../../components/shareButton"
+import { TableOfContents } from "../../components/tableOfContents"
 
 export default function ArticlePage() {
   return (
