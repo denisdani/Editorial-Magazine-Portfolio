@@ -132,7 +132,7 @@ export default async function ArticlePage({
                   <Tag
                     key={i}
                     id={block.id}
-                    className="font-display mb-6 scroll-mt-25 text-3xl font-bold"
+                    className="font-display clear-both mb-6 scroll-mt-25 text-3xl font-bold"
                   >
                     {block.text}
                   </Tag>
