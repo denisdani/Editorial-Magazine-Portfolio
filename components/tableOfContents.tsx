@@ -1,17 +1,32 @@
 "use client"
 
 import { useState, useEffect } from "react"
+
 import { cn } from "@/lib/utils"
+import { ContentBlock } from "@/interfaces/article"
 
-const navItems = [
-  { id: "intro", label: "Intro" },
-  { id: "materiality", label: "Materiality" },
-  { id: "human-element", label: "The Human Element" },
-  { id: "legacy", label: "Legacy" },
-]
+interface TableOfContentsProps {
+  content: ContentBlock[]
+}
 
-export default function TableOfContents() {
+const computeTableOfContents = (content: ContentBlock[]) => {
+  const items: [{ id: string; label: string }] = [
+    { id: "intro", label: "Intro" },
+  ]
+
+  content.map((block) => {
+    if (block.type === "heading" && block.id && block.text) {
+      items.push({ id: block.id, label: block.text })
+    }
+  })
+
+  return items
+}
+
+export default function TableOfContents({ content }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("intro")
+
+  const navItems = computeTableOfContents(content)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +47,7 @@ export default function TableOfContents() {
       if (element) observer.observe(element)
     })
 
-    return () => observer.disconnect() // Cleanup vitale in React
+    return () => observer.disconnect()
   }, [])
 
   const activeIndex = navItems.findIndex((item) => item.id === activeId)

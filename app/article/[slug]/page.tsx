@@ -65,7 +65,7 @@ export default async function ArticlePage({
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
             Contents
           </p>
-          <TableOfContents />
+          <TableOfContents content={contentBlocks} />
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
             Share
           </p>
