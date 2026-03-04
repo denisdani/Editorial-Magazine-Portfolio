@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { ContentBlock } from "@/interfaces/article"
@@ -70,7 +71,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
 
             return (
               <li key={item.id}>
-                <a
+                <Link
                   href={`#${item.id}`}
                   className={cn(
                     "block transition-colors duration-200",
@@ -80,7 +81,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
                   )}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             )
           })}
