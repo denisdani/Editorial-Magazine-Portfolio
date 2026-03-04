@@ -2,13 +2,22 @@ import Link from "next/link"
 
 import { FaArrowRight } from "react-icons/fa"
 
+import { Article } from "@/interfaces/article"
+
 import Tag from "@/components/tag"
 import Author from "@/components/author"
 
-export default function HeroCard() {
+interface HeroCardProps {
+  article: Article
+}
+
+export default function HeroCard({ article }: HeroCardProps) {
   return (
     <section>
-      <Link href={"/article"} className="flex flex-col lg:flex-row">
+      <Link
+        href={`/article/${article.slug}`}
+        className="flex flex-col lg:flex-row"
+      >
         <div className="group relative flex aspect-16/10 w-full flex-col justify-end overflow-hidden rounded p-6 md:p-10 lg:w-2/3">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
@@ -20,7 +29,7 @@ export default function HeroCard() {
           <div className="relative">
             <Tag>Feature Story</Tag>
             <h2 className="font-display mt-6 text-3xl font-bold text-white md:text-5xl xl:text-6xl">
-              The Brutalist Revival in Coastal Japan
+              {article.title}
             </h2>
           </div>
         </div>
@@ -28,13 +37,9 @@ export default function HeroCard() {
           <h3 className="font-display text-2xl font-semibold tracking-wide">
             Concrete & Waves
           </h3>
-          <p className="mt-4 mb-6 text-lg text-gray-600">
-            Exploring how a new wave of architects in Kanagawa are reimagining
-            raw concrete aesthetics to harmonize with the harsh, beautiful
-            seaside environment.
-          </p>
+          <p className="mt-4 mb-6 text-lg text-gray-600">{article.excerpt}</p>
           <div className="border-t border-gray-200">
-            <Author />
+            <Author name={article.author.name} role={article.author.role} />
           </div>
           <div>
             <button className="text-primary group inline-flex flex-row items-center justify-start gap-3 font-medium hover:cursor-pointer">
