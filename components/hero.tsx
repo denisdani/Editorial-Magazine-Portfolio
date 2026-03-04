@@ -2,8 +2,8 @@ import Link from "next/link"
 
 import { FaArrowRight } from "react-icons/fa"
 
-import Tag from "@/app/components/tag"
-import Author from "@/app/components/author"
+import Tag from "@/components/tag"
+import Author from "@/components/author"
 
 export default function Hero() {
   return (

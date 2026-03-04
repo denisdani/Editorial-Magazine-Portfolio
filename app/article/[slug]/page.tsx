@@ -3,10 +3,10 @@ import Image from "next/image"
 import { GoDotFill } from "react-icons/go"
 import { FaFacebook, FaLink, FaTwitter } from "react-icons/fa"
 
-import Author from "@/app/components/author"
-import Tag from "@/app/components/tag"
-import ShareButton from "@/app/components/shareButton"
-import { TableOfContents } from "@/app/components/tableOfContents"
+import Author from "@/components/author"
+import Tag from "@/components/tag"
+import ShareButton from "@/components/shareButton"
+import { TableOfContents } from "@/components/tableOfContents"
 
 export default function ArticlePage() {
   return (
