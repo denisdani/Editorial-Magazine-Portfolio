@@ -1,5 +1,5 @@
-import Hero from "./components/hero"
-import LatestStories from "./components/latestStories"
+import Hero from "@/app/components/hero"
+import LatestStories from "@/app/components/latestStories"
 
 export default function Home() {
   return (

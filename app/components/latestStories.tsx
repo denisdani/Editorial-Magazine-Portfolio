@@ -2,8 +2,8 @@ import Link from "next/link"
 
 import { FiArrowUpRight } from "react-icons/fi"
 
-import StoryCard from "./storyCard"
-import QuoteCard from "./quoteCard"
+import StoryCard from "@/app/components/storyCard"
+import QuoteCard from "@/app/components/quoteCard"
 
 export default function LatestStories() {
   return (
