@@ -7,11 +7,11 @@ import { Article } from "@/interfaces/article"
 import Tag from "@/components/tag"
 import Author from "@/components/author"
 
-interface HeroCardProps {
+interface HeroStoryCardProps {
   article: Article
 }
 
-export default function HeroCard({ article }: HeroCardProps) {
+export default function HeroStoryCard({ article }: HeroStoryCardProps) {
   return (
     <section>
       <Link
