@@ -1,11 +1,16 @@
-import HeroCard from "@/components/heroCard"
+import { getAllArticles } from "@/lib/articles"
+
+import HeroStoryCard from "@/components/heroStoryCard"
 import LatestStories from "@/components/latestStories"
 
-export default function Home() {
+export default async function Home() {
+  const articles = await getAllArticles()
+  const latestStories = articles.slice(1)
+
   return (
     <div className="mx-auto my-12 max-w-360 px-6">
-      <HeroCard />
-      <LatestStories />
+      <HeroStoryCard article={articles[0]} />
+      <LatestStories articles={latestStories} />
     </div>
   )
 }
