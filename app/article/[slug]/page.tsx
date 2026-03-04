@@ -85,24 +85,29 @@ export default async function ArticlePage({
           className="relative col-span-12 scroll-mt-25 lg:col-span-8 lg:pr-24"
           id="intro"
         >
-          {contentBlocks.map((block) => {
+          {contentBlocks.map((block, i) => {
             switch (block.type) {
               case "paragraph":
                 if (block.dropCap) {
                   return (
-                    <p className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium">
+                    <p
+                      key={i}
+                      className="drop-cap font-display mb-10 text-2xl leading-relaxed font-medium"
+                    >
                       {block.text}
                     </p>
                   )
                 }
 
                 return (
-                  <p className="mb-6 text-lg leading-relaxed">{block.text}</p>
+                  <p key={i} className="mb-6 text-lg leading-relaxed">
+                    {block.text}
+                  </p>
                 )
 
               case "image":
                 return (
-                  <div className="-mx-6 my-12 lg:-mx-16">
+                  <div key={i} className="-mx-6 my-12 lg:-mx-16">
                     <figure>
                       <div className="relative aspect-video overflow-hidden rounded">
                         <Image
@@ -125,6 +130,7 @@ export default async function ArticlePage({
 
                 return (
                   <Tag
+                    key={i}
                     id={block.id}
                     className="font-display mb-6 scroll-mt-25 text-3xl font-bold"
                   >
@@ -135,7 +141,10 @@ export default async function ArticlePage({
 
               case "blockquote":
                 return (
-                  <div className="border-primary my-12 border-l-4 py-2 pl-8">
+                  <div
+                    key={i}
+                    className="border-primary my-12 border-l-4 py-2 pl-8"
+                  >
                     <blockquote className="font-display text-3xl leading-snug text-gray-400 italic">
                       {block.text}
                     </blockquote>
@@ -144,7 +153,10 @@ export default async function ArticlePage({
 
               case "image_grid":
                 return (
-                  <div className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+                  <div
+                    key={i}
+                    className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2"
+                  >
                     {block.images?.map((image, i) => (
                       <figure
                         key={i}
