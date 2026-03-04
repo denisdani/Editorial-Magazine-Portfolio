@@ -1,10 +1,12 @@
-import { GoDotFill } from "react-icons/go"
+import Image from "next/image"
 
-import Editor from "../components/editor"
+import { GoDotFill } from "react-icons/go"
+import { FaFacebook, FaLink, FaTwitter } from "react-icons/fa"
+
+import Author from "../components/author"
 import Tag from "../components/tag"
 import ShareButton from "../components/shareButton"
-import { FaFacebook, FaLink, FaTwitter } from "react-icons/fa"
-import Image from "next/image"
+import { TableOfContents } from "../components/tableOfContents"
 
 export default function ArticlePage() {
   return (
@@ -29,7 +31,7 @@ export default function ArticlePage() {
             The Brutalist Revival in Coastal Japan
           </h1>
           <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
-            <Editor />
+            <Author />
             <GoDotFill size={10} className="hidden md:inline" />
             <p className="text-sm">October 24, 2023</p>
             <GoDotFill size={10} className="hidden md:inline" />
@@ -43,45 +45,7 @@ export default function ArticlePage() {
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
             Contents
           </p>
-          <nav className="mt-2 mr-16 mb-8 border-y border-gray-200 py-8">
-            <div className="relative border-l border-gray-200 pl-4">
-              <div className="bg-primary absolute top-0 -left-px h-8 w-0.5 transition-all duration-300 ease-out"></div>
-              <ul className="space-y-6 text-sm font-medium text-gray-400/80">
-                <li>
-                  <a
-                    className="hover:text-primary block font-bold text-gray-400 transition-colors"
-                    href="#intro"
-                  >
-                    Intro
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-primary block transition-colors"
-                    href="#materiality"
-                  >
-                    Materiality
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-primary block transition-colors"
-                    href="#human-element"
-                  >
-                    The Human Element
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-primary block transition-colors"
-                    href="#legacy"
-                  >
-                    Legacy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <TableOfContents />
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
             Share
           </p>

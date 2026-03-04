@@ -3,7 +3,7 @@ import Link from "next/link"
 import { FaArrowRight } from "react-icons/fa"
 
 import Tag from "./tag"
-import Editor from "./editor"
+import Author from "./author"
 
 export default function Hero() {
   return (
@@ -34,7 +34,7 @@ export default function Hero() {
             seaside environment.
           </p>
           <div className="border-t border-gray-200">
-            <Editor />
+            <Author />
           </div>
           <div>
             <button className="text-primary group inline-flex flex-row items-center justify-start gap-3 font-medium hover:cursor-pointer">

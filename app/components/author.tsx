@@ -1,4 +1,4 @@
-export default function Editor() {
+export default function Author() {
   return (
     <div className="flex flex-row items-center gap-3 py-4">
       <span className="inline-flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-sm text-white">
