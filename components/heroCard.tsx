@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa"
 import Tag from "@/components/tag"
 import Author from "@/components/author"
 
-export default function Hero() {
+export default function HeroCard() {
   return (
     <section>
       <Link href={"/article"} className="flex flex-col lg:flex-row">
