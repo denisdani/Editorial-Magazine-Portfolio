@@ -10,7 +10,7 @@ const navItems = [
   { id: "legacy", label: "Legacy" },
 ]
 
-export function TableOfContents() {
+export default function TableOfContents() {
   const [activeId, setActiveId] = useState<string>("intro")
 
   useEffect(() => {
