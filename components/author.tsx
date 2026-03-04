@@ -1,12 +1,17 @@
-export default function Author() {
+interface AuthorProps {
+  name: string
+  role: string
+}
+
+export default function Author({ name, role }: AuthorProps) {
   return (
     <div className="flex flex-row items-center gap-3 py-4">
       <span className="inline-flex aspect-square h-10 w-10 items-center justify-center rounded-full bg-amber-500 text-sm text-white">
         TK
       </span>
       <div>
-        <p className="text-sm font-medium">Takeshi Kovacs</p>
-        <p className="text-xs text-gray-500">Senior Editor</p>
+        <p className="text-sm font-medium">{name}</p>
+        <p className="text-xs text-gray-500">{role}</p>
       </div>
     </div>
   )
