@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 
 import Tag from "@/components/tag"
 
-interface StoryCardProps {
+interface ArticleCardProps {
   title: string
   subtitle: string
   category: string
@@ -13,14 +13,14 @@ interface StoryCardProps {
   aspect?: string
 }
 
-export default function StoryCard({
+export default function ArticleCard({
   title,
   subtitle,
   category,
   bgUrl,
   slug,
   aspect,
-}: StoryCardProps) {
+}: ArticleCardProps) {
   return (
     <article className={cn("group", aspect && "row-span-2")}>
       <Link href={`/article/${slug}`}>
