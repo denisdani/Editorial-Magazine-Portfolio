@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
@@ -20,9 +21,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 h-20 border-b border-stone-200 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-360 flex-row items-center justify-between px-6">
-        <h1 className="font-display z-50 text-2xl font-bold uppercase">
-          Arch &amp; Design
-        </h1>
+        <Link href={"/"}>
+          <h1 className="font-display z-50 text-2xl font-bold uppercase">
+            Arch &amp; Design
+          </h1>
+        </Link>
 
         <nav className="hidden lg:block">
           <ul className="flex flex-row gap-8">
