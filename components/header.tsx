@@ -11,11 +11,11 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    "Architecture",
-    "Interiors",
-    "Landscape",
-    "Design",
-    "Culture",
+    { slug: "architecture", label: "Architecture" },
+    { slug: "interiors", label: "Interiors" },
+    { slug: "landscape", label: "Landscape" },
+    { slug: "design", label: "Design" },
+    { slug: "culture", label: "Culture" },
   ]
 
   return (
@@ -29,13 +29,12 @@ export default function Header() {
 
         <nav className="hidden lg:block">
           <ul className="flex flex-row gap-8">
-            {navLinks.map((link) => (
-              <li
-                key={link}
-                className="hover:text-primary text-sm font-medium transition-all hover:cursor-pointer"
-              >
-                {link}
-              </li>
+            {navLinks.map(({ slug, label }) => (
+              <Link key={slug} href={`/category/${slug}`}>
+                <li className="hover:text-primary text-sm font-medium transition-all hover:cursor-pointer">
+                  {label}
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>
@@ -69,14 +68,15 @@ export default function Header() {
           )}
         >
           <ul className="flex flex-col items-center gap-8 text-xl font-medium">
-            {navLinks.map((link) => (
-              <li
-                key={link}
-                onClick={() => setIsOpen(false)}
-                className="hover:text-primary transition-all"
-              >
-                {link}
-              </li>
+            {navLinks.map(({ slug, label }) => (
+              <Link key={slug} href={`/category/${slug}`}>
+                <li
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-primary transition-all"
+                >
+                  {label}
+                </li>
+              </Link>
             ))}
           </ul>
           <button className="bg-primary mt-10 rounded-full px-6 py-2.5 font-medium text-white">
