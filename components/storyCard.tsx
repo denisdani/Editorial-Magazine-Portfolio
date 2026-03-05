@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import { cn } from "@/lib/utils"
+
 import Tag from "@/components/tag"
 
 interface StoryCardProps {
@@ -17,14 +19,17 @@ export default function StoryCard({
   category,
   bgUrl,
   slug,
-  aspect = "aspect-16/9",
+  aspect,
 }: StoryCardProps) {
-  const rowSpanClass = aspect === "aspect-3/4" ? "row-span-2" : ""
-
   return (
-    <article className={`group ${rowSpanClass}`}>
+    <article className={cn("group", aspect && "row-span-2")}>
       <Link href={`/article/${slug}`}>
-        <div className={`${aspect} relative overflow-hidden rounded`}>
+        <div
+          className={cn(
+            "relative overflow-hidden rounded",
+            aspect ? `aspect-${aspect}` : "aspect-video",
+          )}
+        >
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105"
             style={{ backgroundImage: `url(${bgUrl})` }}

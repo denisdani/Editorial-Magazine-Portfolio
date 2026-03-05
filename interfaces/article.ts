@@ -8,6 +8,7 @@ export interface Article {
   readingTime: string
   excerpt: string
   coverImage: CoverImage
+  aspect?: string
   tags: string[]
   contentBlocks: ContentBlock[]
   relatedArticles: string[]
