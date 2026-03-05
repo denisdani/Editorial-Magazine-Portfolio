@@ -27,7 +27,7 @@ export default function HeroStoryCard({ article }: HeroStoryCardProps) {
             }}
           />
           <div className="relative">
-            <Tag>Feature Story</Tag>
+            <Tag primary>Feature Story</Tag>
             <h2 className="font-display mt-6 text-3xl font-bold text-white md:text-5xl xl:text-6xl">
               {article.title}
             </h2>

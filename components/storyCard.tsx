@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import Tag from "@/components/tag"
+
 interface StoryCardProps {
   title: string
   subtitle: string
@@ -27,9 +29,7 @@ export default function StoryCard({
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105"
             style={{ backgroundImage: `url(${bgUrl})` }}
           ></div>
-          <span className="relative top-4 left-4 rounded-xs bg-white/90 px-3 py-1.5 text-xs font-semibold tracking-wider uppercase">
-            {category}
-          </span>
+          <Tag transparent>{category}</Tag>
         </div>
         <h3 className="group-hover:text-primary font-display mt-4 text-2xl font-bold transition-colors md:text-xl">
           {title}

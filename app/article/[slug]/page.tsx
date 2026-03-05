@@ -26,8 +26,15 @@ export default async function ArticlePage({
     notFound()
   }
 
-  const { category, title, author, publishedAt, readingTime, contentBlocks } =
-    article
+  const {
+    category,
+    title,
+    author,
+    publishedAt,
+    readingTime,
+    contentBlocks,
+    tags,
+  } = article
 
   return (
     <div>
@@ -179,6 +186,14 @@ export default async function ArticlePage({
 
             return null
           })}
+
+          <div className="mt-16 mb-8 flex flex-row gap-4 border-t border-gray-200 pt-8">
+            {tags.map((tag, i) => (
+              <Tag key={i} solid>
+                {tag}
+              </Tag>
+            ))}
+          </div>
         </article>
       </div>
     </div>
