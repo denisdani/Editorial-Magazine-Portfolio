@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi"
 
 import { Article } from "@/interfaces/article"
 
-import StoryCard from "@/components/storyCard"
+import ArticleCard from "@/components/articleCard"
 import QuoteCard from "@/components/quoteCard"
 
 interface LatestStoriesProps {
@@ -27,7 +27,7 @@ export default function LatestStories({ articles }: LatestStoriesProps) {
 
       <div className="mt-10 mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((article) => (
-          <StoryCard
+          <ArticleCard
             key={article.id}
             title={article.title}
             subtitle={article.excerpt}
