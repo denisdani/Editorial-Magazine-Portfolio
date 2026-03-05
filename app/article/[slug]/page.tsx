@@ -52,7 +52,7 @@ export default async function ArticlePage({
         </div>
         <div className="absolute inset-0 z-10 mx-auto flex max-w-5xl flex-col items-center justify-center gap-8 text-white">
           <div>
-            <Tag>{category}</Tag>
+            <Tag variant="primary">{category}</Tag>
           </div>
           <h1 className="font-display text-center text-5xl leading-[1.1] font-extrabold md:text-7xl lg:text-8xl">
             {title}
@@ -189,7 +189,7 @@ export default async function ArticlePage({
 
           <div className="mt-16 mb-8 flex flex-row gap-4 border-t border-gray-200 pt-8">
             {tags.map((tag, i) => (
-              <Tag key={i} solid>
+              <Tag key={i} variant="solid">
                 {tag}
               </Tag>
             ))}

@@ -29,7 +29,7 @@ export default function StoryCard({
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105"
             style={{ backgroundImage: `url(${bgUrl})` }}
           ></div>
-          <Tag transparent>{category}</Tag>
+          <Tag variant="transparent">{category}</Tag>
         </div>
         <h3 className="group-hover:text-primary font-display mt-4 text-2xl font-bold transition-colors md:text-xl">
           {title}
