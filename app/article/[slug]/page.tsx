@@ -11,6 +11,7 @@ import Tag from "@/components/tag"
 import ShareButton from "@/components/shareButton"
 import TableOfContents from "@/components/tableOfContents"
 import BlockRenderer from "@/components/blockRenderer"
+import RelatedArticles from "@/components/relatedArticles"
 
 export default async function ArticlePage({
   params,
@@ -32,6 +33,7 @@ export default async function ArticlePage({
     readingTime,
     contentBlocks,
     tags,
+    relatedArticles,
   } = article
 
   return (
@@ -98,6 +100,8 @@ export default async function ArticlePage({
           </div>
         </article>
       </div>
+
+      <RelatedArticles slugs={relatedArticles} />
     </div>
   )
 }
