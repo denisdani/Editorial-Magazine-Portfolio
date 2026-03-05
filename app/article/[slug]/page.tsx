@@ -56,7 +56,7 @@ export default async function ArticlePage({
             {title}
           </h1>
           <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
-            <Author name={author.name} role={author.role} />
+            <Author name={author.name} role={author.role} white />
             <GoDotFill size={10} className="hidden md:inline" />
             <p className="text-sm">{new Date(publishedAt).toDateString()}</p>
             <GoDotFill size={10} className="hidden md:inline" />
