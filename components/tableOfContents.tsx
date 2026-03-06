@@ -49,7 +49,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [navItems])
 
   const activeIndex = navItems.findIndex((item) => item.id === activeId)
   const safeIndex = activeIndex >= 0 ? activeIndex : 0
