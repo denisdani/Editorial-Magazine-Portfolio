@@ -2,8 +2,9 @@ import { JSX } from "react"
 import Image from "next/image"
 
 import { cn } from "@/lib/utils"
-
 import { ContentBlock } from "@/interfaces/article"
+
+import ParagraphBlock from "./blocks/paragraphBlock"
 
 interface BlockRendererProps {
   content: ContentBlock[]
@@ -15,22 +16,12 @@ export default function BlockRenderer({ content }: BlockRendererProps) {
       {content.map((block, i) => {
         switch (block.type) {
           case "paragraph":
-            if (block.dropCap) {
-              return (
-                <p
-                  key={i}
-                  id="intro"
-                  className="drop-cap font-display mb-10 scroll-mt-25 text-2xl leading-relaxed font-medium"
-                >
-                  {block.text}
-                </p>
-              )
-            }
-
             return (
-              <p key={i} className="mb-6 text-lg leading-relaxed">
-                {block.text}
-              </p>
+              <ParagraphBlock
+                key={i}
+                dropCap={block.dropCap}
+                text={block.text!}
+              />
             )
 
           case "image":
