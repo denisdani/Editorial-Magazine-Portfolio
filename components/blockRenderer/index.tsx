@@ -1,4 +1,3 @@
-import { JSX } from "react"
 import Image from "next/image"
 
 import { cn } from "@/lib/utils"
@@ -6,6 +5,7 @@ import { ContentBlock } from "@/interfaces/article"
 
 import ParagraphBlock from "@/components/blockRenderer/blocks/paragraphBlock"
 import ImageBlock from "@/components/blockRenderer/blocks/imageBlock"
+import HeadingBlock from "@/components/blockRenderer/blocks/headingBlock"
 
 interface BlockRendererProps {
   content: ContentBlock[]
@@ -28,6 +28,7 @@ export default function BlockRenderer({ content }: BlockRendererProps) {
           case "image":
             return (
               <ImageBlock
+                key={i}
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4EEzm_b0XENMkKF0sxtRLua3iePAs9igkWFG-MAxRDER7kMehySvRKayVWREySgfHWqkIMnGzLvjqJJTO02kgaupPwnHxGLbP7OmOHgku97f1w5mI1zrR6OA2ptxTWrJ5f2hZ9cJ9DjyQdyZCmrjg1iRMSkVm_iJ0yYuxZDZraS-Odo1BLhpuQth_Q3XGdD1FS79xMjQaYyyt7ypbqBgNnRtd4surDc2ZQTQQKt8Ajj-TS6SQ6G3SjqGO_HpwhFbwIad-NRyuytf-"
                 alt={block.alt!}
                 caption={block.caption!}
@@ -35,16 +36,13 @@ export default function BlockRenderer({ content }: BlockRendererProps) {
             )
 
           case "heading":
-            const Tag = `h${block.level || 2}` as keyof JSX.IntrinsicElements
-
             return (
-              <Tag
+              <HeadingBlock
                 key={i}
-                id={block.id}
-                className="font-display clear-both mb-6 scroll-mt-25 text-3xl font-bold"
-              >
-                {block.text}
-              </Tag>
+                level={block.level!}
+                id={block.id!}
+                text={block.text!}
+              />
             )
 
           case "blockquote":
