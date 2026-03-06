@@ -4,7 +4,8 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { ContentBlock } from "@/interfaces/article"
 
-import ParagraphBlock from "./blocks/paragraphBlock"
+import ParagraphBlock from "@/components/blockRenderer/blocks/paragraphBlock"
+import ImageBlock from "@/components/blockRenderer/blocks/imageBlock"
 
 interface BlockRendererProps {
   content: ContentBlock[]
@@ -26,21 +27,11 @@ export default function BlockRenderer({ content }: BlockRendererProps) {
 
           case "image":
             return (
-              <div key={i} className="-mx-6 my-12 lg:-mx-16">
-                <figure>
-                  <div className="relative aspect-video overflow-hidden rounded">
-                    <Image
-                      alt={block.alt!}
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4EEzm_b0XENMkKF0sxtRLua3iePAs9igkWFG-MAxRDER7kMehySvRKayVWREySgfHWqkIMnGzLvjqJJTO02kgaupPwnHxGLbP7OmOHgku97f1w5mI1zrR6OA2ptxTWrJ5f2hZ9cJ9DjyQdyZCmrjg1iRMSkVm_iJ0yYuxZDZraS-Odo1BLhpuQth_Q3XGdD1FS79xMjQaYyyt7ypbqBgNnRtd4surDc2ZQTQQKt8Ajj-TS6SQ6G3SjqGO_HpwhFbwIad-NRyuytf-"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <figcaption className="mt-4 px-6 text-center text-sm font-medium text-gray-400">
-                    {block.caption}
-                  </figcaption>
-                </figure>
-              </div>
+              <ImageBlock
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4EEzm_b0XENMkKF0sxtRLua3iePAs9igkWFG-MAxRDER7kMehySvRKayVWREySgfHWqkIMnGzLvjqJJTO02kgaupPwnHxGLbP7OmOHgku97f1w5mI1zrR6OA2ptxTWrJ5f2hZ9cJ9DjyQdyZCmrjg1iRMSkVm_iJ0yYuxZDZraS-Odo1BLhpuQth_Q3XGdD1FS79xMjQaYyyt7ypbqBgNnRtd4surDc2ZQTQQKt8Ajj-TS6SQ6G3SjqGO_HpwhFbwIad-NRyuytf-"
+                alt={block.alt!}
+                caption={block.caption!}
+              />
             )
 
           case "heading":
