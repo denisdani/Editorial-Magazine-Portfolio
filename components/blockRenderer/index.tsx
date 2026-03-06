@@ -6,6 +6,7 @@ import { ContentBlock } from "@/interfaces/article"
 import ParagraphBlock from "@/components/blockRenderer/blocks/paragraphBlock"
 import ImageBlock from "@/components/blockRenderer/blocks/imageBlock"
 import HeadingBlock from "@/components/blockRenderer/blocks/headingBlock"
+import BlockQuoteBlock from "@/components/blockRenderer/blocks/blockQuoteBlock"
 
 interface BlockRendererProps {
   content: ContentBlock[]
@@ -46,16 +47,7 @@ export default function BlockRenderer({ content }: BlockRendererProps) {
             )
 
           case "blockquote":
-            return (
-              <div
-                key={i}
-                className="border-primary my-12 border-l-4 py-2 pl-8"
-              >
-                <blockquote className="font-display text-3xl leading-snug text-gray-400 italic">
-                  {block.text}
-                </blockquote>
-              </div>
-            )
+            return <BlockQuoteBlock text={block.text!} />
 
           case "image_grid":
             return (
