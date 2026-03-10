@@ -16,8 +16,8 @@ export default function ImageGridBlock({ images }: ImageGridBlockProps) {
   return (
     <div className="my-12 grid grid-cols-1 gap-6 md:grid-cols-2">
       {images?.map((image, i) => {
-        const isOddElement = i % 2 !== 0
-        const delay = isOddElement ? 0.3 : 0
+        const isEvenElement = i % 2 !== 0
+        const delay = isEvenElement ? 0.3 : 0
 
         return (
           <motion.figure
@@ -26,7 +26,7 @@ export default function ImageGridBlock({ images }: ImageGridBlockProps) {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             key={i}
-            className={cn("space-y-3", isOddElement && "md:mt-12")}
+            className={cn("space-y-3", isEvenElement && "md:mt-12")}
           >
             <div className="relative aspect-3/4 overflow-hidden rounded">
               <Image
