@@ -32,7 +32,7 @@
     },
     {
       "type": "image",
-      "url": "/images/articles/brutalist-interior-1.jpg",
+      "url": "/images/articles/the-brutalist-revival-in-coastal-japan/brutalist-interior.jpg",
       "alt": "Minimalist interior with large window facing the sea",
       "caption": "Figure 1: The 'Kamakura Monolith' interior, utilizing light wells to soften the concrete walls."
     },
@@ -60,12 +60,12 @@
       "layout": "two-columns",
       "images": [
         {
-          "url": "/images/articles/brutalist-detail-wood-stairs.jpg",
+          "url": "/images/articles/the-brutalist-revival-in-coastal-japan/brutalist-detail-wood-stairs.jpg",
           "alt": "Curved wooden staircase detail",
           "caption": "Detail: Wooden stairs & joinery"
         },
         {
-          "url": "/images/articles/brutalist-detail-facade.jpg",
+          "url": "/images/articles/the-brutalist-revival-in-coastal-japan/brutalist-detail-facade.jpg",
           "alt": "Exterior concrete facade with blue sky",
           "caption": "Detail: Wood-formed concrete"
         }
