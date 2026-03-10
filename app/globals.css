@@ -16,10 +16,9 @@
 
 @layer components {
   .drop-cap {
-    @apply float-left mr-3 mt-1;
-    
+    @apply float-left mt-1 mr-3;
   }
-  
+
   .drop-cap::first-letter {
     @apply mr-4 font-bold;
     initial-letter: 2;

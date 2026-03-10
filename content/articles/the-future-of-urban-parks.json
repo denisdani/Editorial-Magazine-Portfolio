@@ -16,7 +16,12 @@
     "alt": "A towering skyscraper completely covered in lush green vertical gardens"
   },
   "aspect": "3/4",
-  "tags": ["LANDSCAPE", "URBAN PLANNING", "SUSTAINABILITY", "GREEN ARCHITECTURE"],
+  "tags": [
+    "LANDSCAPE",
+    "URBAN PLANNING",
+    "SUSTAINABILITY",
+    "GREEN ARCHITECTURE"
+  ],
   "contentBlocks": [
     {
       "type": "paragraph",
@@ -73,8 +78,5 @@
       "text": "When executed correctly, these vertical parks create vital corridors for avian and insect migration, bringing the chorus of nature back to the deafening hum of the city. The future of the urban park is a structural canopy, woven directly into the fabric of the buildings themselves."
     }
   ],
-  "relatedArticles": [
-    "color-theory-in-2024",
-    "the-return-of-ornamentation"
-  ]
+  "relatedArticles": ["color-theory-in-2024", "the-return-of-ornamentation"]
 }
