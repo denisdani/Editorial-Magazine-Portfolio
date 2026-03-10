@@ -1,4 +1,9 @@
+"use client"
+
 import Image from "next/image"
+
+import { motion } from "motion/react"
+import { getFadeUpVariants } from "@/lib/animations"
 
 interface ImageBlockProps {
   alt: string
@@ -8,7 +13,13 @@ interface ImageBlockProps {
 
 export default function ImageBlock({ alt, caption, src }: ImageBlockProps) {
   return (
-    <div className="-mx-6 my-12 lg:-mx-16">
+    <motion.div
+      variants={getFadeUpVariants()}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      className="-mx-6 my-12 lg:-mx-16"
+    >
       <figure>
         <div className="relative aspect-video overflow-hidden rounded">
           <Image alt={alt} src={src} fill className="object-cover" />
@@ -17,6 +28,6 @@ export default function ImageBlock({ alt, caption, src }: ImageBlockProps) {
           {caption}
         </figcaption>
       </figure>
-    </div>
+    </motion.div>
   )
 }
