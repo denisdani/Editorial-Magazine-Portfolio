@@ -1,3 +1,4 @@
+import { Metadata, ResolvingMetadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 
@@ -14,11 +15,53 @@ import TableOfContents from "@/components/TableOfContents"
 import BlockRenderer from "@/components/BlockRenderer"
 import RelatedArticles from "@/components/RelatedArticles"
 
-export default async function ArticlePage({
-  params,
-}: {
+interface Props {
   params: Promise<{ slug: string }>
-}) {
+}
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const resolvedParams = await params
+  const article: Article = await getArticleBySlug(resolvedParams.slug)
+
+  if (!article) {
+    return {
+      title: "Article Not Found",
+    }
+  }
+
+  return {
+    title: article.title,
+    description: article.excerpt,
+    authors: [{ name: article.author.name }],
+    openGraph: {
+      title: article.title,
+      description: article.excerpt,
+      url: `/article/${article.slug}`,
+      type: "article",
+      publishedTime: article.publishedAt,
+      authors: [article.author.name],
+      images: [
+        {
+          url: article.coverImage.url,
+          alt: article.coverImage.alt || article.title,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+      images: [article.coverImage.url],
+    },
+  }
+}
+
+export default async function ArticlePage({ params }: Props) {
   const resolvedParams = await params
   const article: Article = await getArticleBySlug(resolvedParams.slug)
 
