@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 
@@ -30,10 +31,9 @@ export default function ArticleCard({
             aspect ? `aspect-${aspect}` : "aspect-video",
           )}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105"
-            style={{ backgroundImage: `url(${bgUrl})` }}
-          ></div>
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105">
+            <Image alt={title} src={bgUrl} className="object-cover" fill />
+          </div>
           <Tag variant="transparent">{category}</Tag>
         </div>
         <h3 className="group-hover:text-primary font-display mt-4 text-2xl font-bold transition-colors md:text-xl">

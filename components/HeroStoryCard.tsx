@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 import { FaArrowRight } from "react-icons/fa"
 
@@ -19,12 +20,15 @@ export default function HeroStoryCard({ article }: HeroStoryCardProps) {
         className="flex flex-col lg:flex-row"
       >
         <div className="group relative flex aspect-16/10 w-full flex-col justify-end overflow-hidden rounded p-6 md:p-10 lg:w-2/3">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
-            style={{
-              backgroundImage: `url('${article.coverImage.url}')`,
-            }}
-          />
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105">
+            <Image
+              alt={article.coverImage.alt}
+              src={article.coverImage.url}
+              className="object-cover"
+              fill
+              priority
+            />
+          </div>
           <div className="relative">
             <Tag variant="primary">Feature Story</Tag>
             <h2 className="font-display mt-6 text-3xl font-bold text-white md:text-5xl xl:text-6xl">

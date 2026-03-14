@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import Image from "next/image"
 
 import { getArticleBySlug } from "@/lib/articles"
 import { Article } from "@/interfaces/article"
@@ -40,14 +41,14 @@ export default async function ArticlePage({
   return (
     <div>
       <section className="relative">
-        <div>
-          <div
-            style={{
-              backgroundImage: `url('${coverImage.url}')`,
-            }}
-            className="h-[85vh] bg-cover bg-center bg-no-repeat"
+        <div className="h-[85vh]">
+          <Image
+            alt={coverImage.alt}
+            src={coverImage.url}
+            className="object-cover"
+            fill
+            priority
           />
-
           <div className="absolute inset-0 bg-black/30" />
         </div>
         <div className="absolute inset-0 z-10 mx-auto flex max-w-5xl flex-col items-center justify-center gap-8 text-white">
