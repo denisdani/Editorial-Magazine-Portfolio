@@ -1,7 +1,7 @@
 import { Article } from "@/interfaces/article"
 import { getArticleBySlug } from "@/lib/articles"
 
-import ArticleCard from "@/components/articleCard"
+import ArticleCard from "@/components/ArticleCard"
 
 interface RelatedArticlesProps {
   slugs: string[]

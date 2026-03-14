@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
-import Tag from "@/components/tag"
+import Tag from "@/components/Tag"
 
 interface ArticleCardProps {
   title: string

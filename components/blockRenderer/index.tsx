@@ -1,10 +1,10 @@
 import { ContentBlock } from "@/interfaces/article"
 
-import ParagraphBlock from "@/components/blockRenderer/blocks/paragraphBlock"
-import ImageBlock from "@/components/blockRenderer/blocks/imageBlock"
-import HeadingBlock from "@/components/blockRenderer/blocks/headingBlock"
-import BlockQuoteBlock from "@/components/blockRenderer/blocks/blockQuoteBlock"
-import ImageGridBlock from "@/components/blockRenderer/blocks/imageGridBlock"
+import ParagraphBlock from "@/components/BlockRenderer/blocks/ParagraphBlock"
+import ImageBlock from "@/components/BlockRenderer/blocks/ImageBlock"
+import HeadingBlock from "@/components/BlockRenderer/blocks/HeadingBlock"
+import BlockQuoteBlock from "@/components/BlockRenderer/blocks/BlockQuoteBlock"
+import ImageGridBlock from "@/components/BlockRenderer/blocks/ImageGridBlock"
 
 interface BlockRendererProps {
   content: ContentBlock[]

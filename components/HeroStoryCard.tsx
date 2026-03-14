@@ -4,8 +4,8 @@ import { FaArrowRight } from "react-icons/fa"
 
 import { Article } from "@/interfaces/article"
 
-import Tag from "@/components/tag"
-import Author from "@/components/author"
+import Tag from "@/components/Tag"
+import Author from "@/components/Author"
 
 interface HeroStoryCardProps {
   article: Article

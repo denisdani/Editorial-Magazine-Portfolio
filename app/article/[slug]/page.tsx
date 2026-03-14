@@ -6,12 +6,12 @@ import { Article } from "@/interfaces/article"
 import { GoDotFill } from "react-icons/go"
 import { FaFacebook, FaLink, FaTwitter } from "react-icons/fa"
 
-import Author from "@/components/author"
-import Tag from "@/components/tag"
-import ShareButton from "@/components/shareButton"
-import TableOfContents from "@/components/tableOfContents"
-import BlockRenderer from "@/components/blockRenderer"
-import RelatedArticles from "@/components/relatedArticles"
+import Author from "@/components/Author"
+import Tag from "@/components/Tag"
+import ShareButton from "@/components/ShareButton"
+import TableOfContents from "@/components/TableOfContents"
+import BlockRenderer from "@/components/BlockRenderer"
+import RelatedArticles from "@/components/RelatedArticles"
 
 export default async function ArticlePage({
   params,

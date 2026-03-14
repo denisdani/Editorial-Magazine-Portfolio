@@ -1,7 +1,7 @@
 import { getAllArticles } from "@/lib/articles"
 
-import HeroStoryCard from "@/components/heroStoryCard"
-import LatestStories from "@/components/latestStories"
+import HeroStoryCard from "@/components/HeroStoryCard"
+import LatestStories from "@/components/LatestStories"
 
 export default async function Home() {
   const articles = await getAllArticles()

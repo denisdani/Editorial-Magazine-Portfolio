@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
 
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-import Newsletter from "@/components/newsletter"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import Newsletter from "@/components/Newsletter"
 
 const interFont = Inter({
   variable: "--font-inter",

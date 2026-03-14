@@ -4,8 +4,8 @@ import { FiArrowUpRight } from "react-icons/fi"
 
 import { Article } from "@/interfaces/article"
 
-import ArticleCard from "@/components/articleCard"
-import QuoteCard from "@/components/quoteCard"
+import ArticleCard from "@/components/ArticleCard"
+import QuoteCard from "@/components/QuoteCard"
 
 interface LatestStoriesProps {
   articles: Article[]
