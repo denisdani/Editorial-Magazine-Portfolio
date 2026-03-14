@@ -24,7 +24,7 @@ When partnering with web agencies, my priority is shipping code that is robust, 
 
 ```bash
 # Clone the repository
-git clone [https://github.com/denisdani/editorial-magazine-portfolio.git](https://github.com/denisdani/editorial-magazine-portfolio.git)
+git clone https://github.com/denisdani/editorial-magazine-portfolio.git
 
 # Install dependencies
 npm install
