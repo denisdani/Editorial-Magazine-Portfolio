@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Editorial Magazine Portfolio
 
-## Getting Started
+A modern, editorial-focused web application built to demonstrate scalable frontend architecture and pixel-perfect UI execution.
 
-First, run the development server:
+This repository isn't just a visual portfolio; it's a technical showcase. It highlights how I approach building maintainable, enterprise-ready applications using the latest features of the React ecosystem.
+
+## 🏗 Architecture & Approach
+
+When partnering with web agencies, my priority is shipping code that is robust, predictable, and easy for any team to pick up. This project reflects that philosophy:
+
+- **Component-Driven UI:** Modular, heavily typed components designed for reusability across different editorial layouts.
+- **Modern Styling:** Built entirely with Tailwind CSS v4, utilizing the new `@theme inline` architecture for a zero-config, highly optimized styling pipeline.
+- **Performance Focused:** Leveraging the Next.js App Router for optimal Server Component rendering and static generation strategies.
+- **Typography First:** Custom CSS layers handling complex editorial requirements like drop caps (`.drop-cap`) and fluid typography scaling.
+
+## 💻 Tech Stack
+
+- **Core:** Next.js 16.1.6, React 19.2.3, TypeScript.
+- **Styling:** Tailwind CSS v4.
+- **Motion:** `motion` (Framer) for physics-based, fluid animations.
+- **Tooling:** Prettier, ESLint configured for strict Next.js standards.
+
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
+git clone [https://github.com/denisdani/editorial-magazine-portfolio.git](https://github.com/denisdani/editorial-magazine-portfolio.git)
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to http://localhost:3000 to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👨‍💻 About Me
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I am a Senior Frontend Engineer specialized in React.js, Next.js, and TypeScript with 11+ years of experience. My background spans from mobile app prototyping to leading frontend modernizations for enterprise ecosystems.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+After a successful tenure as a Director / Principal Engineer in London , I have returned to my core passion: operating as a hands-on Individual Contributor. I now work entirely fully remote, partnering as a freelancer with web agencies to architect and deliver high-quality digital products autonomously, bringing architectural maturity and reliable execution to every sprint.
