@@ -30,11 +30,12 @@ export default function Header() {
         <nav className="hidden lg:block">
           <ul className="flex flex-row gap-8">
             {navLinks.map(({ slug, label }) => (
-              <Link key={slug} href={`/category/${slug}`}>
-                <li className="hover:text-primary text-sm font-medium transition-all hover:cursor-pointer">
-                  {label}
-                </li>
-              </Link>
+              <li
+                key={slug}
+                className="hover:text-primary text-sm font-medium transition-all hover:cursor-pointer"
+              >
+                {label}
+              </li>
             ))}
           </ul>
         </nav>
@@ -55,7 +56,11 @@ export default function Header() {
             className="p-2 text-stone-900 lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <MdClose size={28} /> : <MdMenu size={28} />}
+            {isOpen ? (
+              <MdClose size={28} aria-label="Close Menu" />
+            ) : (
+              <MdMenu size={28} aria-label="Open Menu" />
+            )}
           </button>
         </div>
 
@@ -69,14 +74,13 @@ export default function Header() {
         >
           <ul className="flex flex-col items-center gap-8 text-xl font-medium">
             {navLinks.map(({ slug, label }) => (
-              <Link key={slug} href={`/category/${slug}`}>
-                <li
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-primary transition-all"
-                >
-                  {label}
-                </li>
-              </Link>
+              <li
+                key={slug}
+                onClick={() => setIsOpen(false)}
+                className="hover:text-primary transition-all"
+              >
+                {label}
+              </li>
             ))}
           </ul>
           <button className="bg-primary mt-10 rounded-full px-6 py-2.5 font-medium text-white">
