@@ -1,8 +1,8 @@
-import { Metadata, ResolvingMetadata } from "next"
+import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
 
-import { getArticleBySlug } from "@/lib/articles"
+import { getAllArticles, getArticleBySlug } from "@/lib/articles"
 import { Article } from "@/interfaces/article"
 
 import { GoDotFill } from "react-icons/go"
@@ -19,10 +19,15 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
+export async function generateStaticParams() {
+  const articles = await getAllArticles()
+
+  return articles.map((article) => ({
+    slug: article.slug,
+  }))
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params
   const article: Article = await getArticleBySlug(resolvedParams.slug)
 
