@@ -18,8 +18,8 @@ const playfairDisplayFont = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Forma Magazine",
-    default: "Forma Magazine | Modern Architecture & Spatial Design",
+    template: "%s | Arch & Design",
+    default: "Arch & Design | Modern Architecture & Spatial Design",
   },
   description:
     "A curated editorial exploring the intersection of modern architecture, brutalist aesthetics, and sustainable spatial design.",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "Forma Magazine",
+    siteName: "Arch & Design",
   },
   twitter: {
     card: "summary_large_image",
