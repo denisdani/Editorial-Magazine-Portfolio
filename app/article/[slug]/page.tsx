@@ -140,7 +140,7 @@ export default async function ArticlePage({ params }: Props) {
         <article className="relative col-span-12 lg:col-span-8 lg:pr-24">
           <BlockRenderer content={contentBlocks} />
 
-          <div className="mt-16 mb-8 flex flex-row gap-4 border-t border-gray-200 pt-8">
+          <div className="mt-16 mb-8 flex flex-row flex-wrap gap-4 border-t border-gray-200 pt-8">
             {tags.map((tag, i) => (
               <Tag key={i} variant="solid">
                 {tag}
