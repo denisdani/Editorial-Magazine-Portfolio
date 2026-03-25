@@ -22,7 +22,13 @@ export default function ImageBlock({ alt, caption, src }: ImageBlockProps) {
     >
       <figure>
         <div className="relative aspect-video overflow-hidden rounded">
-          <Image alt={alt} src={src} fill className="object-cover" />
+          <Image
+            alt={alt}
+            src={src}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 66vw"
+          />
         </div>
         <figcaption className="mt-4 px-6 text-center text-sm font-medium text-gray-400">
           {caption}

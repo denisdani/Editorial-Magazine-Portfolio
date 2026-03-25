@@ -25,6 +25,7 @@ export default function HeroStoryCard({ article }: HeroStoryCardProps) {
               alt={article.coverImage.alt}
               src={article.coverImage.url}
               className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 66vw"
               fill
               priority
             />

@@ -34,6 +34,7 @@ export default function ImageGridBlock({ images }: ImageGridBlockProps) {
                 alt={image.alt}
                 className="object-cover transition-transform duration-700 hover:scale-105"
                 src={image.url}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
             </div>
             <figcaption className="text-xs tracking-wide text-gray-500 uppercase">

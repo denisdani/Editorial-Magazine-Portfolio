@@ -32,7 +32,13 @@ export default function ArticleCard({
           )}
         >
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 group-hover:scale-105">
-            <Image alt={title} src={bgUrl} className="object-cover" fill />
+            <Image
+              alt={title}
+              src={bgUrl}
+              className="object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
           </div>
           <Tag variant="transparent">{category}</Tag>
         </div>
