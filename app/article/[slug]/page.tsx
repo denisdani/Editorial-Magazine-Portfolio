@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <div>
       <section className="relative">
-        <div className="h-[85vh]">
+        <div className="relative h-[85vh]">
           <Image
             alt={coverImage.alt}
             src={coverImage.url}
